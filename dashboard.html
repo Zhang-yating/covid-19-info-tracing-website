@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang = "en">
+    <head>
+        <title>Covid19 Data</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href="dash.css">
+        <script type="text/javascript" src = "dash.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <h1>COVID-19 Statistics</h1>
+        </div>
+        
+            <div class = "calender">
+                <label for = "weekNum">Enter a week here: </label>
+                <input type = "text" id = "weekNum" class = "inputW" value = "Latest Week">
+                <button id = "apply"> Apply </button>
+                <p id = "error_message"></p>
+            </div>
+        
+        <div class = "grid-container1">
+            <div class = "grid-item" id = "Total">
+                <h1 class = "total">Total vaccinations administered</h1>
+                <h1 id = "upToWeek"> </h1>
+                <p id = "totalV"></p>
+
+            </div>
+            <div class = "grid-item" id = "weekly">
+                <h1 id = "totalWeekly"> </h1>
+                <p id = "weeklyInfo"></p>
+            </div>
+            <div class = "grid-item" id = "vaccine_info">
+                <h1>weekly vaccine information:</h1>
+                <ul id = "differentVaccine">
+                    <li> <b>Moderna:</b> <span id = "Moderna"></span></li>
+                    <li> <b>Pfizer:</b> <span id = "Pfizer"></span></li>
+                    <li> <b>JanssenInfo:</b> <span id = "JanssenInfo"></span></li>
+                    <li> <b>AstraZeneca:</b> <span id = "AstraZeneca"></span></li>
+                </ul>
+            </div>
+            <div class = "grid-item" id = "age_group">
+                <h1 id = "age_group_headline"> </h1>
+                <button id = "Fully">FullyNumber</button>
+                <button id = "Per">Percentage</button>
+                <table>
+                    <tr>
+                        <th> Age 10-19</th>
+                        <th> Age 20-29</th>
+                        <th> Age 30-39</th>
+                        <th> Age 40-49</th>
+                        <th> Age 50-59</th>
+                        <th> Age 60-69</th>
+                        <th> Age 70-79</th>
+                        <th> Above 80</th>
+                        <th> NA </th>
+                    </tr>
+                    <tr>
+                        <td id = "10-19"></td>
+                        <td id = "20-29"></td>
+                        <td id = "30-39"></td>
+                        <td id = "40-49"></td>
+                        <td id = "50-59"></td>
+                        <td id = "60-69"></td>
+                        <td id = "70-79"></td>
+                        <td id = "above80"></td>
+                        <td id = "NA"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1 id = "CountyTitle">COVID-19 Data For Irish Counties</h1>
+        </div>
+        <div class = "grid-container2">
+            <div class = "grid-item" id = "countyCompare">
+                <p id = "most case"></p>
+                <p id = "less case"></p>
+            </div>
+            <div class = "grid-item" id = "country_selector">
+                <p>You can select a county to see the details.</p>
+                <label>Select a county: </label>
+                <div id = "DisplayBox">Dublin</div>
+                <button id = "chooseCountry"> &#8681 </button>
+                <button id = "applyCountry">Apply</button>
+                <div id = "showCountyBoard"></div>
+                <ul id = "CountryList"></ul>
+            </div>
+            <div class = "grid-item" id = "Country_info">
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,261 @@
+body{
+    overflow-x: hidden;
+}
+body h1{
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 25px;
+    display: block;
+    padding-left: 15px;
+    color: cadetblue;
+
+}
+.header{
+    text-align: center;
+    background-color: beige;
+    height: 150px;
+    padding: 15px;
+}
+
+.header h1{
+    font-size: 40px;
+    margin-top: 40px;
+    color: cadetblue;
+    display: block;
+
+}
+#totalV {
+    font-size: 30px;
+    padding-left: 35%;
+    padding-top: 7%;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+#weeklyInfo{
+    font-size: 23px;
+    padding-left: 45%;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:13px;
+    margin: 32px;
+}
+.grid-item{
+    border: 2px solid lightgray;
+    background-color: beige;
+
+}
+
+#Total{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#weekly{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 120px;
+}
+
+button:hover{
+    color: brown;
+}
+#vaccine_info{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 190px;
+}
+#differentVaccine span{
+    font-size:20px;
+    padding-left: 5px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+#age_group{
+    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#age_group_headline{
+    display: inline;
+}
+
+#age_group table{
+    display: block;
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 83%;
+    margin-top: 3%;
+    text-align: center;
+}
+#age_group th{
+    padding: 3px 11px 3px 11px;
+    background-color: darkseagreen;
+}
+
+#age_group td:nth-child(even){
+    background-color: #D6EEEE;
+}
+#age_group td:nth-child(odd){
+    background-color: lightblue;
+}
+#age_group td{
+    padding: 3px 11px 3px 11px;
+    height: 40px;
+    color: cornflowerblue;
+}
+#Fully, #Per{
+    display: inline;
+    position: relative;
+    left:5%;
+    border: 1px solid gray;
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 6px;
+    color: black;
+}
+#Per{
+    margin-left: -8px;
+}
+#Fully{
+    background-color: rgb(100, 149, 237);
+}
+#CountyTitle{
+    text-align: center;
+    background-color: #D6EEEE;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    height: 110px;
+    padding-top: 40px;
+
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 32px;
+}
+
+#country_selector, #countyCompare{
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: none;
+    background-color: white;
+}
+#country_selector p{
+    background-color: lightblue;
+    margin-top: 0;
+    width: 490px;
+    border-left: 6px solid dodgerblue;
+    padding-left: 6px;
+    font-size: 17px;
+}
+#countyCompare{
+    height: 80px;
+    background-color: beige;
+    padding: 17px;
+}
+
+#countyCompare p{
+    margin: 5px;
+    font-weight: bold;
+}
+
+#countyCompare span{
+    color: cadetblue;
+}
+#Country_info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 270px;
+}
+.calender{
+    margin-top: 20px;
+    position: relative;
+    left: 60%;
+}
+.inputW{
+    position: relative;
+}
+#error_message{
+    background-color: bisque;
+    z-index: 1;
+    width: 400px;
+    position: absolute;
+    margin-top:5px;
+    font-size:2px;
+    padding: 5px;
+    border-left: 4px solid brown;
+    color: brown;
+    display: none;
+}
+#weekNum{
+    text-align: center;
+    color: gray;
+}
+
+#apply{
+    margin-left: 20px;
+    /*border: 1px solid;*/
+    
+}
+h1{
+    font-size: 20px;
+}
+#DisplayBox{
+    display: inline-block;
+    border : 1px solid black;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+    padding: 3px;
+}
+#chooseCountry{
+    display: inline-block;
+    height: 29px;
+    width: 24px;
+    top: 2%;
+    left: 200px;
+    padding: 1px;
+    color: brown;
+    font-size: 14px;
+
+}
+#showCountyBoard{
+    display: inline-block;
+}
+#CountryList{
+    overflow-x: hidden;
+    display: none;
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 2px;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+#CountryList li{
+    list-style: none;
+    font-size: 17px;
+    border-bottom : 1px solid lightgray;
+    width: 150px;
+    text-align: center;
+    background-color: azure;
+    padding: 5px;
+
+}
+#CountryList li:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+#Country_info{
+    background-color: lightgray;
+}
